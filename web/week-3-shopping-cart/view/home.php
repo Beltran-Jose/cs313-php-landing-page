@@ -29,6 +29,7 @@
             overflow: visible;
             outline: 0;
             height: auto;
+            resize: none;
         }
     </style>
 
