@@ -32,7 +32,7 @@
       <h1 class="cover-heading">CS 313 Web Engineering II</h1>
       <p class="lead">This landing page serves as link repo for future assignments / projects.</p>
       <p class="lead">
-        <a href="/web/week-3-shopping-cart/index.php" class="btn btn-lg btn-secondary">Week 03 - Shopping Cart</a>
+        <a href="/week-3-shopping-cart/index.php" class="btn btn-lg btn-secondary">Week 03 - Shopping Cart</a>
       </p>
     </main>
 
