@@ -64,8 +64,7 @@
 
 
         <!-- Modal -->
-        <div class="modal" tabindex="-1" role="dialog">
-            <div class="modal-dialog" role="document">
+      
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title">Modal title</h5>
@@ -81,8 +80,7 @@
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     </div>
                 </div>
-            </div>
-        </div>
+ 
 
     </main>
 
