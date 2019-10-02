@@ -45,7 +45,7 @@
             <img src="..." class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Card title</h5>
-                <form action="view/cart.php" method="POST">
+                <form action="view/index.php" method="POST">
                     <textarea class="card-text" name="product-name" value="Product 1"
                         readonly=readonly>Product 1</textarea>
                     <p class="card-text" name="product-price" value="55.00">price</p>
