@@ -20,7 +20,7 @@ switch ($action) {
 
       $_SESSION['cart'][] = $productName;
 
-      include '/view/cart.php';
+      include '../view/cart.php';
       break;
 
    default:
