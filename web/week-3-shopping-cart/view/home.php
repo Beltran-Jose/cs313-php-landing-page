@@ -21,6 +21,16 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        textarea {
+            background: 0;
+            border: 0;
+            width: 100%;
+            overflow: visible;
+            outline: 0;
+            height: auto;
+        }
+    </style>
 
 </head>
 
@@ -35,9 +45,9 @@
             <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <form action="cart/index.php" method="POST">
-                    <textarea class="card-text" name="product-name" value="Product 1" readonly=readonly >Product 1</textarea>
+                    <textarea class="card-text" name="product-name" value="Product 1"
+                        readonly=readonly>Product 1</textarea>
                     <p class="card-text" name="product-price" value="55.00">price</p>
-                    <p class="card-text" name="product-description" value="nice prod.">Description</p>
 
                     <input type="submit" class="btn btn-primary" name="submit" value="BUY NOW">
                     <input type="hidden" name="action" value="addToCart">
