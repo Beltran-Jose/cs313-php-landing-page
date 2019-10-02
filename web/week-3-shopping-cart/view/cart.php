@@ -1,5 +1,10 @@
 <?php
-    session_start()
+    session_start();
+
+    $name = htmlspecialchars($_POST["product-name"]);
+    $email = htmlspecialchars($_POST["product-price"]);
+    $major = htmlspecialchars($_POST["product-description"]);
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -20,7 +25,7 @@
     <header></header>
 
     <main>
-    <? echo $_POST["product-name"]; ?>
+        <? echo $name; ?>
 
     </main>
     <!-- FOOTER -->

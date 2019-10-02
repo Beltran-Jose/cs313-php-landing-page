@@ -31,10 +31,10 @@
             <img src="..." class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Card title</h5>
-                <form action="view/cart.php" method="post">
+                <form action="view/cart.php" method="POST">
                     <p class="card-text" name="product-name" value="Product 1">Product 1</p>
-                    <p class="card-text" name="product-price">price</p>
-                    <p class="card-text" name="product-description">Description</p>
+                    <p class="card-text" name="product-price" value="55.00">price</p>
+                    <p class="card-text" name="product-description" value="nice prod.">Description</p>
                     <button type="submit" class="btn btn-primary">BUY NOW</button>
                 </form>
             </div>
