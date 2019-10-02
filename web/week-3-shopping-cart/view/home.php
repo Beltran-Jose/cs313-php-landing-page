@@ -45,13 +45,12 @@
             <img src="..." class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Card title</h5>
-                <form action="home.php" method="POST">
+                <form action="view/cart.php" method="POST">
                     <textarea class="card-text" name="product-name" value="Product 1"
                         readonly=readonly>Product 1</textarea>
                     <p class="card-text" name="product-price" value="55.00">price</p>
 
-                    <input type="submit" class="btn btn-primary" name="submit" value="BUY NOW" data-toggle="modal"
-                        data-target="#exampleModal">
+                    <input type="submit" class="btn btn-primary" name="submit" value="BUY NOW" style="visibility :hidden;" id="primaryButton">
                     <input type="hidden" name="action" value="addToCart">
                 </form>
             </div>
@@ -64,7 +63,8 @@
 
 
         <!-- Modal -->
-      
+        <div class="modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title">Modal title</h5>
@@ -76,11 +76,12 @@
                         <p>Modal body text goes here.</p>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" onclick="document.getElementById('primaryButton').click()">View Cart</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Continue Shopping</button>
                     </div>
                 </div>
- 
+            </div>
+        </div>
 
     </main>
 
