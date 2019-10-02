@@ -2,8 +2,8 @@
     session_start();
 
     $name = htmlspecialchars($_POST["product-name"]);
-    $email = htmlspecialchars($_POST["product-price"]);
-    $major = htmlspecialchars($_POST["product-description"]);
+    $price = htmlspecialchars($_POST["product-price"]);
+    $description = htmlspecialchars($_POST["product-description"]);
 
 ?>
 <!DOCTYPE html>
@@ -25,7 +25,7 @@
     <header></header>
 
     <main>
-        <? echo $name; ?>
+        <? echo "<p>$name</p>"; ?>
 
     </main>
     <!-- FOOTER -->
