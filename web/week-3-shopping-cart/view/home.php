@@ -1,7 +1,9 @@
 <?php
     session_start();
+    $cart_array = array();
+    $_SESSION['cart'] = $cart_array;
 
-    $_SESSION['cart'][] = $_POST['product'];
+    $_SESSION['cart'][] = "test";
 
 ?>
 <!DOCTYPE html>

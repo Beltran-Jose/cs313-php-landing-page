@@ -1,9 +1,9 @@
 <?php
     session_start();
 
-    $name = htmlspecialchars($_POST["product-name"]);
-    $price = htmlspecialchars($_POST["product-price"]);
-    $description = htmlspecialchars($_POST["product-description"]);
+    // $name = htmlspecialchars($_POST["product-name"]);
+    // $price = htmlspecialchars($_POST["product-price"]);
+    // $description = htmlspecialchars($_POST["product-description"]);
 
 ?>
 <!DOCTYPE html>
@@ -25,7 +25,13 @@
     <header></header>
 
     <main>
-        <? echo "<p>$name</p>"; ?>
+    <?php 
+    foreach($_SESSION['cart'] as $key=>$value)
+    {
+    // and print out the values
+    echo 'The value of $_SESSION['."'".$key."'".'] is '."'".$value."'".' <br />';
+    }
+    ?>
 
     </main>
     <!-- FOOTER -->
