@@ -32,13 +32,15 @@
       <h1 class="cover-heading">CS 313 Web Engineering II</h1>
       <p class="lead">This landing page serves as link repo for future assignments / projects.</p>
       <p class="lead">
-        <a href="#" class="btn btn-lg btn-secondary">Assignments</a>
+        <a href="/web/week-3-shopping-cart/index.php" class="btn btn-lg btn-secondary">Week 03 - Shopping Cart</a>
       </p>
     </main>
 
     <!-- FOOTER -->
     <?php include $_SERVER['DOCUMENT_ROOT'].'/common/footer.php'; ?>
+    
   </div>
+
   <!-- JAVSCRIPT -->
   <?php include $_SERVER['DOCUMENT_ROOT'].'/common/scripts.php'; ?>
 </body>
