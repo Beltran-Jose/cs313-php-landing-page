@@ -32,7 +32,7 @@
             <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <form action="view/cart.php" method="post">
-                    <p class="card-text" name="product-name">name</p>
+                    <p class="card-text" name="product-name" value="Product 1">Product 1</p>
                     <p class="card-text" name="product-price">price</p>
                     <p class="card-text" name="product-description">Description</p>
                     <button type="submit" class="btn btn-primary">BUY NOW</button>
