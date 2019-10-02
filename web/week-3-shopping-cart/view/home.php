@@ -45,7 +45,7 @@
             <img src="..." class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Card title</h5>
-                <form action="" method="POST">
+                <form action="home.php" method="POST">
                     <textarea class="card-text" name="product-name" value="Product 1"
                         readonly=readonly>Product 1</textarea>
                     <p class="card-text" name="product-price" value="55.00">price</p>
@@ -64,7 +64,7 @@
 
 
         <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        <div class="modal fade" id="exampleModal" tabindex="1" role="dialog" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
