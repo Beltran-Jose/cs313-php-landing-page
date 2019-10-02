@@ -31,7 +31,7 @@
             <img src="..." class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Card title</h5>
-                <form action="cart.php" method="post">
+                <form action="view/cart.php" method="post">
                     <p class="card-text" name="product-name">name</p>
                     <p class="card-text" name="product-price">price</p>
                     <p class="card-text" name="product-description">Description</p>
