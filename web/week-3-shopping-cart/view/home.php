@@ -50,12 +50,17 @@
                         readonly=readonly>Product 1</textarea>
                     <p class="card-text" name="product-price" value="55.00">price</p>
 
-                    <button type="submit" class="btn btn-primary" name="submit" value="BUY NOW" data-toggle="modal"
-                        data-target="#exampleModal">buy</button>
+                    <input type="submit" class="btn btn-primary" name="submit" value="BUY NOW" data-toggle="modal"
+                        data-target="#exampleModal">
                     <input type="hidden" name="action" value="addToCart">
                 </form>
             </div>
         </div>
+
+
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            Launch demo modal
+        </button>
 
 
         <!-- Modal -->
