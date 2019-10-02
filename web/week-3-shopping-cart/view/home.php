@@ -4,7 +4,7 @@
     $_SESSION['cart'] = $cart_array;
 
     $_SESSION['cart'][] = "first entry";
-    $_SESSION['cart'][] = "second entry"
+    $_SESSION['cart'][] = "second entry";
 
 ?>
 <!DOCTYPE html>
@@ -34,11 +34,13 @@
             <img src="..." class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Card title</h5>
-                <form action="view/cart.php" method="POST">
+                <form action="cart/index.php" method="POST">
                     <p class="card-text" name="product-name" value="Product 1">Product 1</p>
                     <p class="card-text" name="product-price" value="55.00">price</p>
                     <p class="card-text" name="product-description" value="nice prod.">Description</p>
-                    <button type="submit" class="btn btn-primary">BUY NOW</button>
+
+                    <input type="submit" class="btn btn-primary" name="submit" value="BUY NOW">
+                    <input type="hidden" name="action" value="addToCart">
                 </form>
             </div>
         </div>
