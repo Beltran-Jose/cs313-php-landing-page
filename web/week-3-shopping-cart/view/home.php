@@ -51,7 +51,7 @@
                     <p class="card-text" name="product-price" value="55.00">price</p>
 
                     <button type="submit" class="btn btn-primary" name="submit" value="BUY NOW" data-toggle="modal"
-                        data-target="#exampleModal">buy</button
+                        data-target="#exampleModal">buy</button>
                     <input type="hidden" name="action" value="addToCart">
                 </form>
             </div>
