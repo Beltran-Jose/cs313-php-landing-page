@@ -13,7 +13,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Product Catalog</title>
 
-    <link rel="stylesheet" href="/styles/styles.css">
+
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -27,12 +27,12 @@
     </header>
 
     <main>
-        <div class="card">
-            <div class="card-title">
-                test card title
-            </div>
+        <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
             <div class="card-body">
-                test card body text
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">card text.</p>
+                <a href="#" class="btn btn-primary">BUY NOW</a>
             </div>
         </div>
     </main>
