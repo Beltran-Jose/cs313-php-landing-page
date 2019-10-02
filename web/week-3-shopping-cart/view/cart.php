@@ -20,7 +20,8 @@
     <header></header>
 
     <main>
-    <? echo $_POST["product-name"] ?>
+    <? echo $_POST["product-name"]; ?>
+
     </main>
     <!-- FOOTER -->
     <?php include $_SERVER['DOCUMENT_ROOT'].'/common/footer.php'; ?>
