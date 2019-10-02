@@ -3,7 +3,8 @@
     $cart_array = array();
     $_SESSION['cart'] = $cart_array;
 
-    $_SESSION['cart'][] = "test";
+    $_SESSION['cart'][] = "first entry";
+    $_SESSION['cart'][] = "second entry"
 
 ?>
 <!DOCTYPE html>
