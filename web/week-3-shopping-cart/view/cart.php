@@ -26,13 +26,15 @@
 
     <main>
     <h2>test</h2>
-    
+
     <?php 
         foreach($_SESSION['cart'] as $i){
             foreach($i as $key => $value){
                 echo 'The value of $_SESSION['."'".$key."'".'] is '."'".$value."'".' <br />';
             }       
         }
+
+        $var_dump($_SESSION['cart']);
     ?>
 
     </main>
