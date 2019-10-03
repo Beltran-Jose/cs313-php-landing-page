@@ -34,7 +34,7 @@
             }       
         }
 
-        $var_dump($_SESSION['cart']);
+        var_dump($_SESSION['cart']);
     ?>
 
     </main>
