@@ -27,19 +27,11 @@
     <main>
     <h2>test</h2>
     <?php 
-
-        for ($i = 0; $i < count($_SESSION['cart']); $i++){
-            
-            for ($z = 0; $z < count($_SESSION['cart'][$i]); $z++){
-
-                foreach($z as $key=>$value){
-                    echo 'The value of $_SESSION['."'".$key."'".'] is '."'".$value."'".' <br />'; 
-               
-                }
-                
-            }
+        foreach($_SESSION['cart'] as $i){
+            foreach($i as $key => $value){
+                echo 'The value of $_SESSION['."'".$key."'".'] is '."'".$value."'".' <br />';
+            }       
         }
-
         // foreach($_SESSION['cart'] as $key=>$value)
         // {
         //     // and print out the values
