@@ -59,7 +59,9 @@
                 </form>
             </div>
         </div>
+
         <br>
+
         <div class="card" style="width: 18rem;">
             <img src="..." class="card-img-top" alt="...">
             <div class="card-body">
@@ -81,7 +83,6 @@
                 </form>
             </div>
         </div>
-
 
     </main>
 

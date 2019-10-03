@@ -19,10 +19,12 @@ switch ($action) {
       $productName = filter_input(INPUT_POST, 'product-name', FILTER_SANITIZE_STRING);
       $productCost = filter_input(INPUT_POST, 'product-cost', FILTER_SANITIZE_STRING);
 
-      if(isset($_SESSION['cart'])){
-         array_push($_SESSION['cart'], [$productName,$productCost]);
-      } else {
-         $_SESSION['cart'][] = Array($productName, $productCost);
+      for($i = 0; $i<count($_SESSION['cart']); $i++){
+         if(isset($_SESSION['cart'][$i])){
+            array_push($_SESSION['cart'], [$productName,$productCost]);
+         } else {
+            $_SESSION['cart'][] = Array($productName, $productCost);
+         }
       }
 
 
