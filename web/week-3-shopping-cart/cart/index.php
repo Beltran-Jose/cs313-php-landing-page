@@ -17,8 +17,9 @@ switch ($action) {
    case 'addToCart':
 
       $productName = filter_input(INPUT_POST, 'product-name', FILTER_SANITIZE_STRING);
+      $productCost = filter_input(INPUT_POST, 'product-cost', FILTER_SANITIZE_STRING);
 
-      $_SESSION['cart'][] = $productName;
+      $_SESSION['cart'][] = Array($productName, $productCost);
 
       include '../view/cart.php';
       break;
