@@ -59,6 +59,28 @@
                 </form>
             </div>
         </div>
+        <br>
+        <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <form action="cart/index.php" method="POST">
+
+                    <!-- Product Name -->
+                    <p class="card-text">Product B</p>
+                    <input type="hidden" name="product-name" value="Product B">
+
+                    <!-- Product Cost -->
+                    <p class="card-text">$55.00</p>
+                    <input type="hidden" name="product-cost" value="100.00">
+
+                    <!-- submission -->
+                    <input type="submit" class="btn btn-primary" name="submit" value="BUY NOW" id="primaryButton">
+                    <input type="hidden" name="action" value="addToCart">
+
+                </form>
+            </div>
+        </div>
 
 
     </main>
