@@ -19,7 +19,12 @@ switch ($action) {
       $productName = filter_input(INPUT_POST, 'product-name', FILTER_SANITIZE_STRING);
       $productCost = filter_input(INPUT_POST, 'product-cost', FILTER_SANITIZE_STRING);
 
-      $_SESSION['cart'][] = Array($productName, $productCost);
+      if(isset($_SESSION['cart'])){
+         array_push($_SESSION['cart'], [$productName,$productCost]);
+      } else {
+         $_SESSION['cart'][] = Array($productName, $productCost);
+      }
+
 
       include '../view/cart.php';
       break;

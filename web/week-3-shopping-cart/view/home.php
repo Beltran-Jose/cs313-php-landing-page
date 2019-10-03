@@ -71,7 +71,7 @@
                     <input type="hidden" name="product-name" value="Product B">
 
                     <!-- Product Cost -->
-                    <p class="card-text">$55.00</p>
+                    <p class="card-text">$100.00</p>
                     <input type="hidden" name="product-cost" value="100.00">
 
                     <!-- submission -->
