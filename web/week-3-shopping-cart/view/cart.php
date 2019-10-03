@@ -27,7 +27,7 @@
     <main>
     <h2>test</h2>
     <?php 
-        foreach($_SESSION['cart'] as $key=>$value)
+        foreach($_SESSION['cart'][] as $key=>$value)
         {
             // and print out the values
             echo 'The value of $_SESSION['."'".$key."'".'] is '."'".$value."'".' <br />';
