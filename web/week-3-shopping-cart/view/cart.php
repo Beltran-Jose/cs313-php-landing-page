@@ -29,14 +29,15 @@
     <?php 
 
         for ($i = 0; $i < count($_SESSION['cart']); $i++){
+            
+            for ($z = 0; $z < count($_SESSION['cart'][$i]); $z++){
 
-            foreach($i as $key=>$value){
-                echo 'The value of $_SESSION['."'".$key."'".'] is '."'".$value."'".' <br />'; 
+                foreach($z as $key=>$value){
+                    echo 'The value of $_SESSION['."'".$key."'".'] is '."'".$value."'".' <br />'; 
+               
+                }
+                
             }
-
-            // for ($z = 0; $z < count($_SESSION['cart'][$i]); $z++){
-            //     echo ''
-            // }
         }
 
         // foreach($_SESSION['cart'] as $key=>$value)
