@@ -30,10 +30,10 @@
 
 </head>
 
-<body>
-    <header>
+<!-- Header -->
+<?php include $_SERVER['DOCUMENT_ROOT'].'/week-3-shopping-cart/common/header.php'; ?>
 
-    </header>
+<body>
 
     <main>
         <div class="card" style="width: 18rem;">
