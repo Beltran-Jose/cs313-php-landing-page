@@ -22,11 +22,11 @@ switch ($action) {
       $productCost = filter_input(INPUT_POST, 'product-cost', FILTER_SANITIZE_STRING);
       
       $item = Array($productName, $productCost);
-      
+
       if(!isset($_SESSION['cart'])){
          $_SESSION['cart'] = Array();
       } else {
-         $_SESSION['cart'][] = $item;
+         array_push($_SESSION['cart'][], $item);
       }
                 
             
