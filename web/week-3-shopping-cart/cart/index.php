@@ -26,7 +26,7 @@ switch ($action) {
             } else {
                $_SESSION['cart'][] = Array($productName, $productCost);
             }
-      
+      header('Location: /view/home.php');
       break;
 
    default:
