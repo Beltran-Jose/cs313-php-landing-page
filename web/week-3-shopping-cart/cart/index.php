@@ -21,16 +21,13 @@ switch ($action) {
       $productName = filter_input(INPUT_POST, 'product-name', FILTER_SANITIZE_STRING);
       $productCost = filter_input(INPUT_POST, 'product-cost', FILTER_SANITIZE_STRING);
       
-               // array_push($cart_array, [$productName,$productCost]);
-               // for($i = 0; $i < count($_SESSION['cart']); $i++){
-               //    $_SESSION['cart'][$i] = Array($productName, $productCost);
-               // }
-
-               $prod = array();
-               array_push($prod, [$productCost, $productCost]);
-                  foreach ($prod AS $item) {
-                    array_push($_SESSION['cart'][], $item);
-                  }
+      $item = Array($productName, $productCost);
+      
+      if(!isset($_SESSION['cart'])){
+         $_SESSION['cart'] = Array();
+      } else {
+         $_SESSION['cart'][] = $item;
+      }
                 
             
       header('Location: /week-3-shopping-cart/view/home.php');
