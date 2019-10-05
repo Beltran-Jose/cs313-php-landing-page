@@ -64,7 +64,7 @@
             <img src="..." class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Card title</h5>
-                <form action="cart/index.php" method="POST">
+                <form action="/cart/index.php" method="POST">
 
                     <!-- Product Name -->
                     <p class="card-text">Product B</p>
