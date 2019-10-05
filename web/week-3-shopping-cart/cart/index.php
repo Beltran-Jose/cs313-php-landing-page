@@ -22,9 +22,16 @@ switch ($action) {
       $productCost = filter_input(INPUT_POST, 'product-cost', FILTER_SANITIZE_STRING);
       
                // array_push($cart_array, [$productName,$productCost]);
-               for($i = 0; $i < count($_SESSION['cart']); $i++){
-                  $_SESSION['cart'][$i] = Array($productName, $productCost);
-               }
+               // for($i = 0; $i < count($_SESSION['cart']); $i++){
+               //    $_SESSION['cart'][$i] = Array($productName, $productCost);
+               // }
+
+               if (!empty($_SESSION['cart'])) {
+                  $_SESSION['cart'] = array();
+                  foreach ($cart AS $item) {
+                    array_push($_SESSION['cart'], $item);
+                  }
+                }
             
       header('Location: /week-3-shopping-cart/view/home.php');
       break;
