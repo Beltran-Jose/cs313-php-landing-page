@@ -25,9 +25,9 @@ switch ($action) {
                // for($i = 0; $i < count($_SESSION['cart']); $i++){
                //    $_SESSION['cart'][$i] = Array($productName, $productCost);
                // }
-               
+
                $prod = array();
-               array_push($prod, $productCost, $productCost);
+               array_push($prod, [$productCost, $productCost]);
                   foreach ($prod AS $item) {
                     array_push($_SESSION['cart'][], $item);
                   }

@@ -90,9 +90,7 @@
         }       
     }
 
-    var_dump($_SESSION['cart'][0]);
-    var_dump($_SESSION['cart'][1]);
-    var_dump($prod);
+    var_dump($_SESSION['cart']);
 ?>
 
     </main>
