@@ -26,12 +26,7 @@ switch ($action) {
             } else {
                $_SESSION['cart'][] = Array($productName, $productCost);
             }
-
-
-
-
-
-      include '../view/cart.php';
+      
       break;
 
    default:
