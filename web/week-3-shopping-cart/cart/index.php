@@ -25,11 +25,12 @@ switch ($action) {
                // for($i = 0; $i < count($_SESSION['cart']); $i++){
                //    $_SESSION['cart'][$i] = Array($productName, $productCost);
                // }
-
-               array_push($_SESSION['cart'][], $productCost, $productCost);
-                  // foreach ($cart_array AS $item) {
-                  //   array_push($_SESSION['cart'][], $item);
-                  // }
+               
+               $prod = array();
+               array_push($prod, $productCost, $productCost);
+                  foreach ($prod AS $item) {
+                    array_push($_SESSION['cart'][], $item);
+                  }
                 
             
       header('Location: /week-3-shopping-cart/view/home.php');
