@@ -26,9 +26,9 @@ switch ($action) {
                //    $_SESSION['cart'][$i] = Array($productName, $productCost);
                // }
 
-               if (!empty($_SESSION['cart'])) {
+               if (!empty($cart_array)) {
                   $_SESSION['cart'] = array();
-                  foreach ($cart AS $item) {
+                  foreach ($cart_array AS $item) {
                     array_push($_SESSION['cart'], $item);
                   }
                 }
