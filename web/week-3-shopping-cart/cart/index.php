@@ -21,11 +21,9 @@ switch ($action) {
       $productName = filter_input(INPUT_POST, 'product-name', FILTER_SANITIZE_STRING);
       $productCost = filter_input(INPUT_POST, 'product-cost', FILTER_SANITIZE_STRING);
       
-            if(isset($i)){
                array_push($cart_array, [$productName,$productCost]);
-            } else {
-               $_SESSION['cart'][] = Array($productName, $productCost);
-            }
+               // $_SESSION['cart'][] = Array($productName, $productCost);
+            
       header('Location: /week-3-shopping-cart/view/home.php');
       break;
 
