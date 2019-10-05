@@ -3,10 +3,6 @@
 // Create or access a Session
 session_start();
 
-$cart_array = array();
-$_SESSION['cart'] = $cart_array;
-
-
 //variables
 
 $action = filter_input(INPUT_POST, 'action');
