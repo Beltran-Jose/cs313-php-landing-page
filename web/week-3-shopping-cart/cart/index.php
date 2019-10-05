@@ -23,10 +23,9 @@ switch ($action) {
       
             if(isset($i)){
                array_push($cart_array, [$productName,$productCost]);
-            } 
-            // else {
-            //    $_SESSION['cart'][] = Array($productName, $productCost);
-            // }
+            } else {
+               $_SESSION['cart'][] = Array($productName, $productCost);
+            }
 
 
 
