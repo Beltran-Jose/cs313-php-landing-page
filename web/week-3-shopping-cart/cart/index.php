@@ -26,7 +26,7 @@ switch ($action) {
          array_push($_SESSION['cart'], $item);
       }
                 
-      include 'view/home.php';
+      include '/view/home.php';
       // header('Location: /week-3-shopping-cart/view/home.php');
       break;
 
