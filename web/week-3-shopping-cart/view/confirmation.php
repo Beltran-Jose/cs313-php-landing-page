@@ -61,7 +61,7 @@
         <hr>
         <p>These items will be shipped to:</p>
         <?php
-            echo $_SESSION['user']['address'];
+            echo '<h2>'.$homeAddress.'</h2>';
         ?>
 
     </main>
