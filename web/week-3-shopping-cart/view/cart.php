@@ -22,8 +22,8 @@
 </head>
 
 <body>
-    <header></header>
-
+    <!-- Header -->
+    <?php include $_SERVER['DOCUMENT_ROOT'].'/week-3-shopping-cart/common/header-cart.php'; ?>
     <main>
     <h2>test</h2>
 
