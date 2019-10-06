@@ -29,6 +29,14 @@ switch ($action) {
       header('Location: /week-3-shopping-cart/view/home.php');
       break;
 
+   case 'completePurchase':
+
+      $homeAddress = filter_input(INPUT_POST, 'homeAdress', FILTER_SANITIZE_STRING);
+      $_SESSION['user']['address'] = $homeAddress;
+
+      header('location: /week-3-shopping-cart/view/')
+      break;
+   
    default:
       include 'home.php';
 

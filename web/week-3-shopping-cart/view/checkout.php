@@ -26,7 +26,7 @@
         <form action="/week-3-shopping-cart/cart/index.php" method="POST">
             <div class="form-group">
                 <label for="exampleInputEmail1">Home address</label>
-                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                <input type="text" class="form-control" id="homeAddress" name="homeAddress" aria-describedby="emailHelp"
                     placeholder="Enter home address">
                 <small id="emailHelp" class="form-text text-muted">We'll never share your information with anyone
                     else.</small>
