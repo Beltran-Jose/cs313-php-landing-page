@@ -25,12 +25,12 @@
     <!-- Header -->
     <?php include $_SERVER['DOCUMENT_ROOT'].'/week-3-shopping-cart/common/header-cart.php'; ?>
     <main>
-        <h2>test</h2>
+        <h2>Your Cart</h2>
         <table class="table">
-                        <tr>
-                            <th>Product</th>
-                            <th>Cost</th>
-                        </tr>
+            <tr>
+                <th>Product</th>
+                <th>Cost</th>
+            </tr>
             <?php 
                 foreach($_SESSION['cart'] as $i){
                         echo '
@@ -40,6 +40,14 @@
                                 </tr>'; 
                 }
             ?>
+            <tr>
+                <th></th>
+                <th>Total Cost</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td>12312312</td>
+            </tr>
         </table>
 
     </main>
