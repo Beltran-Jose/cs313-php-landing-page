@@ -31,7 +31,16 @@
     
         foreach($_SESSION['cart'] as $i){
             foreach($i as $key => $value){
-                echo 'The value of $_SESSION['."'".$key."'".'] is '."'".$value."'".' <br />';
+                echo '<table class="table">
+                        <tr>
+                            <th>Product</th>
+                            <th>Cost</th>
+                        </tr>
+                        <tr>
+                            <td>'.$key.'</td>
+                            <td>'.$value.'</td>
+                        </tr>
+                        </table>';
             }       
         }
 
