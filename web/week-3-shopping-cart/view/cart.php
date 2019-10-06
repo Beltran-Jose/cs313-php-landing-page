@@ -48,27 +48,12 @@
                 <td></td>
                 <td>
                     <?php
-                        $item = $_SESSION['cart'];
-                        array_sum(array_map(function($item) { 
-                            return $item[1]; 
-                        }, $arr));
-                        // $total = array();
-                        // foreach($_SESSION['cart'] as $ar)
-                        // {
-                        //     foreach($ar as $k => $v)
-                        //     {
-                        //         if(array_key_exists($v, $total))
-                        //             $total[$v][1] = $total[$v][1] + $ar[1];
-                        //         // else if($k == 'city')
-                        //         //     $total[$v] = $ar;
-                        //     }
-                        // }
-                        // print_r($total);
 
-                        // $total = 0;
-                        // foreach($_SESSION['cart'] as $i){
-                        //     echo $total += intVal($i[1]);
-                        // } 
+                        $total = 0;
+                        foreach($_SESSION['cart'] as $i){
+                            $total += $i[1];
+                        } 
+                        echo $total;
                     ?>
                 </td>
             </tr>
