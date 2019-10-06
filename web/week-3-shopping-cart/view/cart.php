@@ -59,7 +59,7 @@
                                 //     $total[$v] = $ar;
                             }
                         }
-                        echo $total;
+                        print_r($total);
                         // $total = 0;
                         // foreach($_SESSION['cart'] as $i){
                         //     echo $total += intVal($i[1]);
