@@ -32,6 +32,7 @@ switch ($action) {
    case 'completePurchase':
 
       $homeAddress = filter_input(INPUT_POST, 'home-address', FILTER_SANITIZE_STRING);
+      $_SESSION['address'] = $homeAddress;
 
       header('location: /week-3-shopping-cart/view/confirmation.php');
       break;
