@@ -27,8 +27,8 @@
             <div class="form-group">
                 <label for="address">Home address</label>
 
-                <input type="text" class="form-control" id="address" name="home-address" aria-describedby="address-help"
-                    placeholder="Enter home address">
+                <textarea class="form-control" id="address" name="home-address" aria-describedby="address-help"
+                    placeholder="Enter home address"></textarea>
 
                 <small id="address-help" class="form-text text-muted">We'll never share your information with anyone
                     else.</small>
