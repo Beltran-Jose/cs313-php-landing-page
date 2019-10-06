@@ -37,7 +37,7 @@
                             <th>Cost</th>
                         </tr>
                         <tr>
-                            <td>'.$key.'</td>
+                            <td>'.$i[0].'</td>
                             <td>'.$value.'</td>
                         </tr>
                         </table>';
