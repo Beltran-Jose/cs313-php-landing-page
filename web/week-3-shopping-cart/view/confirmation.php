@@ -62,6 +62,7 @@
         <p>These items will be shipped to:</p>
         <?php
             echo '<h2>'.$homeAddress.'</h2>';
+            var_dump($homeAddress);
         ?>
 
     </main>
