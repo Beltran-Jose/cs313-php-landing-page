@@ -25,25 +25,22 @@
     <!-- Header -->
     <?php include $_SERVER['DOCUMENT_ROOT'].'/week-3-shopping-cart/common/header-cart.php'; ?>
     <main>
-    <h2>test</h2>
-
-    <?php 
-    
-        foreach($_SESSION['cart'] as $i){
-                echo '<table class="table">
+        <h2>test</h2>
+        <table class="table">
                         <tr>
                             <th>Product</th>
                             <th>Cost</th>
                         </tr>
-                        <tr>
-                            <td>'.$i[0].'</td>
-                            <td>'.$i[1].'</td>
-                        </tr>
-                        </table>'; 
-        }
-
-        var_dump($_SESSION['cart']);
-    ?>
+            <?php 
+                foreach($_SESSION['cart'] as $i){
+                        echo '
+                                <tr>
+                                    <td>'.$i[0].'</td>
+                                    <td>'.$i[1].'</td>
+                                </tr>'; 
+                }
+            ?>
+        </table>
 
     </main>
     <!-- FOOTER -->
