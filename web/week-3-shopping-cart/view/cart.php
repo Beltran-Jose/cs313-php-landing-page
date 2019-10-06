@@ -48,10 +48,22 @@
                 <td></td>
                 <td>
                     <?php
-                        $total = 0;
-                        foreach($_SESSION['cart'] as $i){
-                            echo $total += intVal($i[1]);
-                        } 
+                        $total = array();
+                        foreach($_SESSION['cart'] as $ar)
+                        {
+                            foreach($ar as $k => $v)
+                            {
+                                if(array_key_exists($v, $total))
+                                    $total[$v][1] = $total[$v][1] + $ar[1];
+                                // else if($k == 'city')
+                                //     $total[$v] = $ar;
+                            }
+                        }
+                        echo $total;
+                        // $total = 0;
+                        // foreach($_SESSION['cart'] as $i){
+                        //     echo $total += intVal($i[1]);
+                        // } 
                     ?>
                 </td>
             </tr>
