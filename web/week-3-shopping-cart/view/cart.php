@@ -55,7 +55,7 @@
             </tr>
         </table>
         <br>
-        <a href="/week-3-shopping-cart/checkout.php" class="btn btn-success">Continue Checkout ></a>
+        <a href="/week-3-shopping-cart/view/checkout.php" class="btn btn-success">Continue Checkout ></a>
 
     </main>
 
