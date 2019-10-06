@@ -34,7 +34,7 @@ switch ($action) {
       $homeAddress = filter_input(INPUT_POST, 'homeAdress', FILTER_SANITIZE_STRING);
       $_SESSION['user']['address'] = $homeAddress;
 
-      header('location: /week-3-shopping-cart/view/')
+      header('location: /week-3-shopping-cart/view/confirmation.php');
       break;
    
    default:
