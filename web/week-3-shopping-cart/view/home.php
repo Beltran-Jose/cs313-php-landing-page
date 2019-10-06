@@ -41,6 +41,7 @@
             <img src="..." class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Product A</h5>
+                
                 <form action="/week-3-shopping-cart/cart/index.php" method="POST">
 
                     <!-- Product Name -->
