@@ -1,10 +1,5 @@
 <?php
     session_start();
-
-    // $name = htmlspecialchars($_POST["product-name"]);
-    // $price = htmlspecialchars($_POST["product-price"]);
-    // $description = htmlspecialchars($_POST["product-description"]);
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -24,6 +19,7 @@
 <body>
     <!-- Header -->
     <?php include $_SERVER['DOCUMENT_ROOT'].'/week-3-shopping-cart/common/header-cart.php'; ?>
+
     <main>
         <h2>Your Cart</h2>
         <table class="table">
@@ -53,13 +49,16 @@
                         foreach($_SESSION['cart'] as $i){
                             $total += $i[1];
                         } 
-                        echo $total;
+                        echo '$'.$total;
                     ?>
                 </td>
             </tr>
         </table>
+        <br>
+        <a href="/week-3-shopping-cart/checkout.php" class="btn btn-success">Continue Checkout ></a>
 
     </main>
+
     <!-- FOOTER -->
     <?php include $_SERVER['DOCUMENT_ROOT'].'/common/footer.php'; ?>
 
