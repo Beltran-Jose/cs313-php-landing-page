@@ -60,9 +60,9 @@
         </table>
         <hr>
         <p>These items will be shipped to:</p>
+        
         <?php
             echo '<h2>'.$_SESSION['address'].'</h2>';
-            var_dump($_SESSION['address']);
         ?>
 
     </main>
