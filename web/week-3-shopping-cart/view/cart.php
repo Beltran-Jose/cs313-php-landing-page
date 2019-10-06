@@ -30,7 +30,6 @@
     <?php 
     
         foreach($_SESSION['cart'] as $i){
-            foreach($i as $key => $value){
                 echo '<table class="table">
                         <tr>
                             <th>Product</th>
@@ -38,10 +37,9 @@
                         </tr>
                         <tr>
                             <td>'.$i[0].'</td>
-                            <td>'.$value.'</td>
+                            <td>'.$i[1].'</td>
                         </tr>
-                        </table>';
-            }       
+                        </table>'; 
         }
 
         var_dump($_SESSION['cart']);
