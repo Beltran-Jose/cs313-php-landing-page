@@ -46,7 +46,14 @@
             </tr>
             <tr>
                 <td></td>
-                <td>12312312</td>
+                <td>
+                    <?php
+                        $total = 0;
+                        foreach($_SESSION['cart'] as $i){
+                            echo $total += $i;
+                        } 
+                    ?>
+                </td>
             </tr>
         </table>
 
