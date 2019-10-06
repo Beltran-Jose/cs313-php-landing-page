@@ -50,7 +50,7 @@
                     <?php
                         $total = 0;
                         foreach($_SESSION['cart'] as $i){
-                            echo $total += $i[1];
+                            echo $total += number_format($i[1]);
                         } 
                     ?>
                 </td>
